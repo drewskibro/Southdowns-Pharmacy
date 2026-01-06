@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>South Downs Pharmacy Group - Award-Winning Healthcare</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brand-purple': '#503C7A',
+            'brand-yellow': '#FFD93D',
+            'brand-navy': '#003366',
+            'brand-teal': '#00BFA5',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            script: ['Pacifico', 'cursive'],
+          }
+        }
+      }
+    };
+  </script>
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Pacifico&display=swap');
+    
+    * {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+    }
+    
+    .hover-lift {
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .hover-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(80, 60, 122, 0.2);
+    }
+  </style>
+</head>
+<body class="bg-white">
+
+<!-- NAVIGATION -->
+<nav class="fixed top-0 left-0 right-0 z-50" style="background: #503C7A; box-shadow: 0 4px 20px rgba(80, 60, 122, 0.3);">
+  <div class="max-w-7xl mx-auto px-6 md:px-8">
+    <div class="flex items-center justify-between h-20">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <img src="https://c.animaapp.com/mion78msn7N741/img/southdowns-logo.png" alt="South Downs Pharmacy Group" class="h-14 brightness-0 invert">
+      </div>
+      
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="#" class="text-white hover:text-brand-yellow transition-colors font-semibold text-[15px]">Home</a>
+        <a href="#services" class="text-white hover:text-brand-yellow transition-colors font-semibold text-[15px]">Services</a>
+        <a href="#treatments" class="text-white hover:text-brand-yellow transition-colors font-semibold text-[15px]">Treatments</a>
+        <a href="about.html" class="text-white hover:text-brand-yellow transition-colors font-semibold text-[15px]">About</a>
+        <a href="contact.html" class="text-white hover:text-brand-yellow transition-colors font-semibold text-[15px]">Contact</a>
+      </div>
+      
+      <!-- CTA Button -->
+      <button class="hidden md:block text-white px-8 py-3.5 rounded-full transition-all hover:scale-105 font-bold text-[15px]" style="background: #FFD93D; color: #503C7A; box-shadow: 0 4px 16px rgba(255, 217, 61, 0.4);">
+        Book Appointment
+      </button>
+      
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden text-white">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-white">
+  
+  <div class="relative max-w-[1600px] mx-auto px-6 md:px-12">
+    
+    <!-- Top: Headline Spanning Full Width -->
+    <div class="text-center mb-20 md:mb-24">
+      <!-- Trust Badges -->
+      <div class="flex items-center justify-center gap-3 mb-10">
+        <div class="inline-flex items-center backdrop-blur-md px-6 py-3 rounded-full border-2" style="background: rgba(255, 255, 255, 0.95); box-shadow: 0 8px 32px rgba(80, 60, 122, 0.12); border-color: rgba(80, 60, 122, 0.15);">
+          <svg class="w-5 h-5 mr-2.5" fill="currentColor" viewBox="0 0 20 20" style="color: #503C7A;">
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+          </svg>
+          <span class="font-bold text-[13px] tracking-[0.5px]" style="color: #003366;">2,000+ Patients</span>
+        </div>
+        
+        <div class="inline-flex items-center backdrop-blur-md px-6 py-3 rounded-full border-2" style="background: rgba(255, 255, 255, 0.95); box-shadow: 0 8px 32px rgba(80, 60, 122, 0.12); border-color: rgba(80, 60, 122, 0.15);">
+          <svg class="w-5 h-5 mr-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: #503C7A;" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+          </svg>
+          <span class="font-bold text-[13px] tracking-[0.5px]" style="color: #003366;">GPhC Registered</span>
+        </div>
+      </div>
+      
+      <!-- Headline -->
+      <h1 class="mb-10 max-w-[1200px] mx-auto">
+        <span class="block leading-[0.95] mb-2 font-black" style="font-size: clamp(52px, 7vw, 108px); color: #503C7A; letter-spacing: -0.03em;">
+          Award-Winning
+        </span>
+        <span class="block leading-[1.1] font-semibold" style="font-size: clamp(42px, 5.5vw, 76px); color: #503C7A; letter-spacing: -0.025em;">
+          Healthcare in Hampshire
+        </span>
+      </h1>
+      
+      <!-- Service Pills -->
+      <div class="max-w-[1100px] mx-auto mb-12">
+        <div class="flex items-center justify-center gap-5 md:gap-7 flex-wrap">
+          <!-- Weight Loss Pill -->
+          <div class="flex items-center gap-3 px-7 py-3.5 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-[0_12px_32px_rgba(80,60,122,0.4)]" style="background: linear-gradient(135deg, #503C7A 0%, #6B4FA0 100%); box-shadow: 0 8px 24px rgba(80, 60, 122, 0.3);">
+            <!-- Heartbeat Icon (Health-focused) -->
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4"/>
+            </svg>
+            <span class="text-white uppercase tracking-[0.5px]" style="font-size: clamp(15px, 1.8vw, 18px); font-weight: 700; letter-spacing: -0.02em;">Weight Loss</span>
+          </div>
+          
+          <div class="w-2.5 h-2.5 rounded-full hidden md:block" style="background-color: #FFD93D;"></div>
+          
+          <!-- Travel Health Pill -->
+          <div class="flex items-center gap-3 px-7 py-3.5 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-[0_12px_32px_rgba(0,191,165,0.4)]" style="background: linear-gradient(135deg, #00BFA5 0%, #00D4B8 100%); box-shadow: 0 8px 24px rgba(0, 191, 165, 0.3);">
+            <!-- Airplane + Medical Cross Icon -->
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+              <circle cx="12" cy="8" r="1.5" fill="currentColor"/>
+            </svg>
+            <span class="text-white uppercase tracking-[0.5px]" style="font-size: clamp(15px, 1.8vw, 18px); font-weight: 700; letter-spacing: -0.02em;">Travel Health</span>
+          </div>
+          
+          <div class="w-2.5 h-2.5 rounded-full hidden md:block" style="background-color: #FFD93D;"></div>
+          
+          <!-- Pharmacy Pill -->
+          <div class="flex items-center gap-3 px-7 py-3.5 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-[0_12px_32px_rgba(0,51,102,0.4)]" style="background: linear-gradient(135deg, #003366 0%, #004A8F 100%); box-shadow: 0 8px 24px rgba(0, 51, 102, 0.3);">
+            <!-- Mortar & Pestle Icon -->
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+            </svg>
+            <span class="text-white uppercase tracking-[0.5px]" style="font-size: clamp(15px, 1.8vw, 18px); font-weight: 700; letter-spacing: -0.02em;">Pharmacy</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Location Badges Section -->
+      <div class="max-w-[1200px] mx-auto">
+        <div class="flex items-center justify-center gap-3 mb-8">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: #503C7A;" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+          </svg>
+          <p class="uppercase tracking-[2px]" style="font-size: 14px; font-weight: 800; color: #503C7A; opacity: 0.9;">OUR LOCATIONS</p>
+        </div>
+        
+        <!-- Location Badge Images Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <!-- Bosmere -->
+          <a href="#bosmere" class="relative block rounded-2xl overflow-hidden border-2 transition-all duration-400 hover:scale-[1.02]" style="border-color: rgba(80, 60, 122, 0.1); box-shadow: 0 4px 12px rgba(80, 60, 122, 0.08), 0 2px 4px rgba(80, 60, 122, 0.04);" onmouseover="this.style.transform='translateY(-8px) scale(1.02)'; this.style.boxShadow='0 12px 32px rgba(80, 60, 122, 0.16), 0 4px 8px rgba(80, 60, 122, 0.08)'" onmouseout="this.style.transform=''; this.style.boxShadow='0 4px 12px rgba(80, 60, 122, 0.08), 0 2px 4px rgba(80, 60, 122, 0.04)'">
+            <img src="https://c.animaapp.com/mion78msn7N741/img/generated-image-january-06-2026-1_12pm.jpeg" alt="Bosmere Pharmacy • Havant" class="w-full h-auto">
+          </a>
+          
+          <!-- Davies -->
+          <a href="#davies" class="relative block rounded-2xl overflow-hidden border-2 transition-all duration-400 hover:scale-[1.02]" style="border-color: rgba(80, 60, 122, 0.1); box-shadow: 0 4px 12px rgba(80, 60, 122, 0.08), 0 2px 4px rgba(80, 60, 122, 0.04);" onmouseover="this.style.transform='translateY(-8px) scale(1.02)'; this.style.boxShadow='0 12px 32px rgba(80, 60, 122, 0.16), 0 4px 8px rgba(80, 60, 122, 0.08)'" onmouseout="this.style.transform=''; this.style.boxShadow='0 4px 12px rgba(80, 60, 122, 0.08), 0 2px 4px rgba(80, 60, 122, 0.04)'">
+            <img src="https://c.animaapp.com/mion78msn7N741/img/generated-image-january-06-2026-1_19pm.jpeg" alt="Davies Pharmacy • Havant" class="w-full h-auto">
+          </a>
+          
+          <!-- Emsworth -->
+          <a href="#emsworth" class="relative block rounded-2xl overflow-hidden border-2 transition-all duration-400 hover:scale-[1.02]" style="border-color: rgba(80, 60, 122, 0.1); box-shadow: 0 4px 12px rgba(80, 60, 122, 0.08), 0 2px 4px rgba(80, 60, 122, 0.04);" onmouseover="this.style.transform='translateY(-8px) scale(1.02)'; this.style.boxShadow='0 12px 32px rgba(80, 60, 122, 0.16), 0 4px 8px rgba(80, 60, 122, 0.08)'" onmouseout="this.style.transform=''; this.style.boxShadow='0 4px 12px rgba(80, 60, 122, 0.08), 0 2px 4px rgba(80, 60, 122, 0.04)'">
+            <img src="https://c.animaapp.com/mion78msn7N741/img/generated-image-january-06-2026-1_20pm.jpeg" alt="Emsworth Pharmacy • Emsworth" class="w-full h-auto">
+          </a>
+          
+          <!-- Park Parade -->
+          <a href="#park-parade" class="relative block rounded-2xl overflow-hidden border-2 transition-all duration-400 hover:scale-[1.02]" style="border-color: rgba(80, 60, 122, 0.1); box-shadow: 0 4px 12px rgba(80, 60, 122, 0.08), 0 2px 4px rgba(80, 60, 122, 0.04);" onmouseover="this.style.transform='translateY(-8px) scale(1.02)'; this.style.boxShadow='0 12px 32px rgba(80, 60, 122, 0.16), 0 4px 8px rgba(80, 60, 122, 0.08)'" onmouseout="this.style.transform=''; this.style.boxShadow='0 4px 12px rgba(80, 60, 122, 0.08), 0 2px 4px rgba(80, 60, 122, 0.04)'">
+            <img src="https://c.animaapp.com/mion78msn7N741/img/generated-image-january-06-2026-1_22pm.jpeg" alt="Park Parade Pharmacy • Leigh Park" class="w-full h-auto">
+          </a>
+          
+          <!-- Rowlands Castle -->
+          <a href="#rowlands-castle" class="relative block rounded-2xl overflow-hidden border-2 transition-all duration-400 hover:scale-[1.02]" style="border-color: rgba(80, 60, 122, 0.1); box-shadow: 0 4px 12px rgba(80, 60, 122, 0.08), 0 2px 4px rgba(80, 60, 122, 0.04);" onmouseover="this.style.transform='translateY(-8px) scale(1.02)'; this.style.boxShadow='0 12px 32px rgba(80, 60, 122, 0.16), 0 4px 8px rgba(80, 60, 122, 0.08)'" onmouseout="this.style.transform=''; this.style.boxShadow='0 4px 12px rgba(80, 60, 122, 0.08), 0 2px 4px rgba(80, 60, 122, 0.04)'">
+            <img src="https://c.animaapp.com/mion78msn7N741/img/generated-image-january-06-2026-1_23pm.jpeg" alt="Rowlands Castle Pharmacy • Rowlands Castle" class="w-full h-auto">
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- PREMIUM BENTO GRID LAYOUT (PRESERVED) -->
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-5 md:gap-6">
+      
+      <!-- Large Image Card -->
+      <div class="md:col-span-5 md:row-span-2 relative rounded-[32px] overflow-hidden hover-lift border-2 group" style="background: linear-gradient(135deg, #FFFEF7 0%, #FFF9E6 100%); box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12); border-color: rgba(80, 60, 122, 0.2);">
+        <img src="https://c.animaapp.com/mion78msn7N741/assets/undefined-i-need-only-this-gir--2--1-3.png" alt="Weight Loss Success" class="w-full h-full min-h-[500px] md:min-h-[600px] object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
+        <div class="absolute top-8 right-8">
+          <div class="backdrop-blur-md px-6 py-3 rounded-full border-2 font-extrabold text-[14px] tracking-[0.8px]" style="background: rgba(255, 217, 61, 0.95); border-color: rgba(80, 60, 122, 0.2); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); color: #503C7A;">
+            FEATURED
+          </div>
+        </div>
+        <div class="absolute bottom-8 left-8 right-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <div class="backdrop-blur-md px-8 py-6 rounded-2xl border-2" style="background: rgba(255, 255, 255, 0.95); border-color: rgba(80, 60, 122, 0.15); box-shadow: 0 16px 48px rgba(0, 0, 0, 0.25);">
+            <p class="font-bold text-[14px] uppercase tracking-[1px] mb-3" style="color: #503C7A;">WEIGHT LOSS</p>
+            <p class="font-bold text-[28px] leading-[1.2] mb-3" style="color: #1a1a1a;">Medical Weight Loss Programs</p>
+            <p class="font-semibold text-[15px]" style="color: #666666;">Up to 20% body weight reduction</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Stats Card -->
+      <div class="md:col-span-4 md:row-span-1 rounded-[32px] p-12 hover-lift border-2 group" style="background: linear-gradient(135deg, #FFF9E6 0%, #FFFBF0 100%); box-shadow: 0 10px 40px rgba(255, 217, 61, 0.15); border-color: rgba(255, 217, 61, 0.25);">
+        <div class="w-20 h-20 rounded-2xl flex items-center justify-center mb-10 group-hover:scale-110 transition-transform duration-300" style="background: linear-gradient(135deg, #503C7A 0%, #3d2d5c 100%); box-shadow: 0 8px 24px rgba(80, 60, 122, 0.4);">
+          <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+          </svg>
+        </div>
+        <div class="space-y-4">
+          <div class="flex items-baseline gap-3">
+            <span class="font-bold leading-[1] tracking-[-0.03em]" style="font-size: 88px; color: #503C7A;">4.9</span>
+            <svg class="w-14 h-14 mb-4" fill="currentColor" viewBox="0 0 20 20" style="color: #FFD93D;">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            </svg>
+          </div>
+          <p class="font-bold text-[16px] uppercase tracking-[1px]" style="color: #1a1a1a;">GOOGLE RATING</p>
+          <p class="font-semibold text-[14px]" style="color: #999999;">Based on 500+ reviews</p>
+        </div>
+      </div>
+      
+      <!-- CTA Card -->
+      <div class="md:col-span-3 md:row-span-1 rounded-[32px] p-10 hover-lift flex flex-col justify-between border-2" style="background: linear-gradient(135deg, #503C7A 0%, #3d2d5c 100%); box-shadow: 0 20px 60px rgba(80, 60, 122, 0.4); border-color: rgba(255, 255, 255, 0.2);">
+        <div>
+          <div class="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mb-8 backdrop-blur-sm" style="box-shadow: 0 4px 16px rgba(255, 255, 255, 0.25);">
+            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+            </svg>
+          </div>
+          <p class="font-bold text-[15px] text-white uppercase tracking-[1px] mb-4">GET STARTED</p>
+          <p class="font-bold text-[22px] text-white leading-[1.3] mb-8">Book your free consultation today</p>
+        </div>
+        <button class="text-white px-8 py-5 rounded-full transition-all hover:scale-105 inline-flex items-center justify-center w-full font-bold text-[18px]" style="background: #FFD93D; color: #503C7A; box-shadow: 0 8px 24px rgba(255, 217, 61, 0.3);">
+          Book Now
+          <svg class="w-6 h-6 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+          </svg>
+        </button>
+      </div>
+      
+      <!-- Travel Health Image -->
+      <div class="md:col-span-4 md:row-span-1 relative rounded-[32px] overflow-hidden hover-lift border-2" style="background: linear-gradient(135deg, #F5FAFF 0%, #EBF5FF 100%); box-shadow: 0 10px 40px rgba(80, 60, 122, 0.12); border-color: rgba(80, 60, 122, 0.15);">
+        <img src="https://c.animaapp.com/mion78msn7N741/assets/undefined-i-need-only-this-men--1--1-3.png" alt="Travel Health" class="w-full h-full min-h-[280px] object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
+        <div class="absolute bottom-7 left-7 right-7">
+          <div class="backdrop-blur-xl px-7 py-4 rounded-xl border-2 font-bold text-[16px]" style="background: rgba(255, 255, 255, 0.98); border-color: rgba(80, 60, 122, 0.15); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); color: #503C7A;">
+            Travel Health Clinics
+          </div>
+        </div>
+      </div>
+      
+      <!-- Locations Stat Card -->
+      <div class="md:col-span-3 md:row-span-1 rounded-[32px] p-10 hover-lift flex flex-col justify-between border-2" style="background: linear-gradient(135deg, #00BFA5 0%, #00897B 100%); box-shadow: 0 10px 40px rgba(0, 191, 165, 0.25); border-color: rgba(255, 255, 255, 0.2);">
+        <div class="w-20 h-20 rounded-2xl flex items-center justify-center mb-8" style="background: rgba(255, 255, 255, 0.25); box-shadow: 0 8px 24px rgba(255, 255, 255, 0.3);">
+          <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+          </svg>
+        </div>
+        <div>
+          <div class="font-bold text-white leading-[1] tracking-[-0.04em] mb-4" style="font-size: 110px;">5</div>
+          <p class="font-bold text-[16px] text-white uppercase tracking-[1px] leading-[1.3]">Locations Across Hampshire</p>
+        </div>
+      </div>
+      
+      <!-- Pharmacy Image -->
+      <div class="md:col-span-3 md:row-span-1 relative rounded-[32px] overflow-hidden hover-lift border-2" style="background: linear-gradient(135deg, #FFF5F0 0%, #FFEBE0 100%); box-shadow: 0 10px 40px rgba(80, 60, 122, 0.12); border-color: rgba(80, 60, 122, 0.15);">
+        <img src="https://c.animaapp.com/mion78msn7N741/assets/undefined-i-need-only-this-men-1-1.png" alt="Pharmacy" class="w-full h-full min-h-[280px] object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
+        <div class="absolute bottom-7 left-7">
+          <div class="backdrop-blur-xl px-7 py-4 rounded-xl border-2 font-bold text-[16px]" style="background: linear-gradient(135deg, #503C7A 0%, #3d2d5c 100%); border-color: rgba(255, 255, 255, 0.2); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25); color: #FFFFFF;">
+            Pharmacy Services
+          </div>
+        </div>
+      </div>
+      
+      <!-- Services List Card -->
+      <div class="md:col-span-4 md:row-span-1 rounded-[32px] p-10 hover-lift border-2 flex flex-col justify-between" style="background: linear-gradient(135deg, #503C7A 0%, #3d2d5c 100%); box-shadow: 0 20px 60px rgba(80, 60, 122, 0.4); border-color: rgba(255, 255, 255, 0.2);">
+        <div>
+          <div class="flex items-center gap-4 mb-8">
+            <div class="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center backdrop-blur-sm" style="box-shadow: 0 4px 16px rgba(255, 255, 255, 0.25);">
+              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+              </svg>
+            </div>
+            <p class="font-bold text-[17px] text-white uppercase tracking-[1px]">OUR SERVICES</p>
+          </div>
+          <div class="space-y-4">
+            <div class="flex items-center gap-4 p-4 rounded-xl backdrop-blur-sm border-2 transition-all hover:bg-white/25" style="background: rgba(255, 255, 255, 0.15); border-color: rgba(255, 255, 255, 0.25);">
+              <svg class="w-6 h-6 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span class="font-bold text-[17px] text-white">Weight Loss Programs</span>
+            </div>
+            <div class="flex items-center gap-4 p-4 rounded-xl backdrop-blur-sm border-2 transition-all hover:bg-white/25" style="background: rgba(255, 255, 255, 0.15); border-color: rgba(255, 255, 255, 0.25);">
+              <svg class="w-6 h-6 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span class="font-bold text-[17px] text-white">Travel Vaccinations</span>
+            </div>
+            <div class="flex items-center gap-4 p-4 rounded-xl backdrop-blur-sm border-2 transition-all hover:bg-white/25" style="background: rgba(255, 255, 255, 0.15); border-color: rgba(255, 255, 255, 0.25);">
+              <svg class="w-6 h-6 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span class="font-bold text-[17px] text-white">Pharmacy Services</span>
+            </div>
+          </div>
+        </div>
+        <div class="mt-8">
+          <button class="w-full text-white px-6 py-5 rounded-full transition-all hover:scale-105 flex items-center justify-center gap-2 font-bold text-[18px]" style="background: #FFD93D; color: #503C7A; box-shadow: 0 8px 24px rgba(255, 217, 61, 0.3);">
+            View All Services
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Expert Care Image -->
+      <div class="md:col-span-5 md:row-span-1 relative rounded-[32px] overflow-hidden hover-lift border-2" style="background: linear-gradient(135deg, #FFFEF7 0%, #FFF5E6 100%); box-shadow: 0 10px 40px rgba(80, 60, 122, 0.12); border-color: rgba(255, 217, 61, 0.2);">
+        <img src="https://c.animaapp.com/mion78msn7N741/assets/undefined-i-need-only-this-gir--1--1-3.png" alt="Expert Care" class="w-full h-full min-h-[280px] object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
+        <div class="absolute bottom-7 left-7 right-7 flex items-center justify-between gap-4 flex-wrap">
+          <div class="backdrop-blur-xl px-7 py-4 rounded-xl border-2 font-bold text-[16px]" style="background: linear-gradient(135deg, #00BFA5 0%, #00897B 100%); border-color: rgba(255, 255, 255, 0.2); box-shadow: 0 8px 24px rgba(0, 191, 165, 0.3); color: white;">
+            Expert Care
+          </div>
+          <div class="backdrop-blur-xl px-7 py-4 rounded-xl border-2" style="background: rgba(255, 255, 255, 0.98); border-color: rgba(80, 60, 122, 0.15); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);">
+            <p class="font-bold text-[24px] leading-[1] mb-1" style="color: #503C7A;">2,000+</p>
+            <p class="font-bold text-[12px] uppercase tracking-[0.5px]" style="color: #666666;">Patients</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-16" style="background: #503C7A;">
+  <div class="max-w-7xl mx-auto px-6 md:px-8">
+    <div class="grid md:grid-cols-4 gap-12 mb-12">
+      <div>
+        <img src="https://c.animaapp.com/mion78msn7N741/img/southdowns-logo.png" alt="South Downs Pharmacy Group" class="h-14 mb-6 brightness-0 invert">
+        <p class="text-white/70 leading-relaxed font-medium">
+          Award-winning healthcare provider serving Hampshire & West Sussex with excellence.
+        </p>
+      </div>
+      
+      <div>
+        <h4 class="font-bold text-[18px] mb-4 text-white">Services</h4>
+        <ul class="space-y-2">
+          <li><a href="#" class="text-white/70 hover:text-brand-yellow transition-colors font-medium">Weight Loss</a></li>
+          <li><a href="#" class="text-white/70 hover:text-brand-yellow transition-colors font-medium">Travel Health</a></li>
+          <li><a href="#" class="text-white/70 hover:text-brand-yellow transition-colors font-medium">Pharmacy</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h4 class="font-bold text-[18px] mb-4 text-white">Company</h4>
+        <ul class="space-y-2">
+          <li><a href="#" class="text-white/70 hover:text-brand-yellow transition-colors font-medium">About Us</a></li>
+          <li><a href="#" class="text-white/70 hover:text-brand-yellow transition-colors font-medium">Locations</a></li>
+          <li><a href="#" class="text-white/70 hover:text-brand-yellow transition-colors font-medium">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h4 class="font-bold text-[18px] mb-4 text-white">Legal</h4>
+        <ul class="space-y-2">
+          <li><a href="#" class="text-white/70 hover:text-brand-yellow transition-colors font-medium">Privacy Policy</a></li>
+          <li><a href="#" class="text-white/70 hover:text-brand-yellow transition-colors font-medium">Terms & Conditions</a></li>
+          <li><a href="#" class="text-white/70 hover:text-brand-yellow transition-colors font-medium">GPhC Registration</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="border-t border-white/20 pt-8 text-center">
+      <p class="text-white/70 font-medium">
+        © 2025 South Downs Pharmacy Group. All rights reserved. GPhC Registered.
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
